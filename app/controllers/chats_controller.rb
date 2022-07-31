@@ -28,7 +28,8 @@ class ChatsController < ApplicationController
     # publisher = Publisher.new
     # payload = chat_parameters.to_json
     # publisher.publish(queue.name, payload)
-    Publisher.publish("chat", chat_parameters.to_json)
+    handler = PublishHandler.new
+    handler.send_message($chatQueueName, chat_parameters)
     render json: chat_number
   end
 

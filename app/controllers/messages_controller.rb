@@ -25,6 +25,8 @@ class MessagesController < ApplicationController
     @message = Message.new(message_params)
     @message.save
     render json: @message.as_json(except: [:id])
+    handler = PublishHandler.new
+    handler.send_message($messageQueueName,  message_params)
     # Publisher.publish("message", @message)
     # @chat.message_count = $redis.incr("message_count_#{@chat.number}")
     # @chat.save

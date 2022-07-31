@@ -4625,3 +4625,1468 @@ Processing by ChatsController#index as */*
 Completed 200 OK in 7ms (Views: 0.4ms | ActiveRecord: 1.9ms)
 
 
+  [1m[35m (30.8ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.4ms)[0m  [1m[35mCREATE DATABASE `app` DEFAULT CHARACTER SET `utf8`[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE DATABASE `app` DEFAULT CHARACTER SET `utf8`[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (17.5ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT GET_LOCK('6939591962871035475', 0)[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[36mActiveRecord::InternalMetadata Load (0.5ms)[0m  [1m[34mSELECT  `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT RELEASE_LOCK('6939591962871035475')[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /usr/local/bundle/bin/rake:23
+here
+  [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ config/initializers/scheduler.rb:8
+  [1m[36mApplication Load (0.4ms)[0m  [1m[34mSELECT `applications`.* FROM `applications`[0m
+  ↳ config/initializers/scheduler.rb:8
+  [1m[36mChat Load (0.7ms)[0m  [1m[34mSELECT `chats`.* FROM `chats` WHERE `chats`.`application_id` = 1[0m
+  ↳ config/initializers/scheduler.rb:9
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ config/initializers/scheduler.rb:10
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ config/initializers/scheduler.rb:10
+  [1m[36mChat Load (0.2ms)[0m  [1m[34mSELECT `chats`.* FROM `chats`[0m
+  ↳ config/initializers/scheduler.rb:13
+Started GET "/applications/oPUt7V5QjDd8qWAC6f1HB9c3/chats/" for 192.168.144.1 at 2022-07-31 21:33:01 +0000
+  [1m[35m (0.2ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.8.1/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.8.1/lib/active_record/log_subscriber.rb:98
+Processing by ChatsController#index as */*
+  Parameters: {"application_id"=>"oPUt7V5QjDd8qWAC6f1HB9c3"}
+  [1m[36mApplication Load (0.4ms)[0m  [1m[34mSELECT  `applications`.* FROM `applications` WHERE `applications`.`access_token` = 'oPUt7V5QjDd8qWAC6f1HB9c3' LIMIT 1[0m
+  ↳ app/controllers/chats_controller.rb:55
+  [1m[36mChat Load (0.4ms)[0m  [1m[34mSELECT `chats`.* FROM `chats` WHERE `chats`.`application_id` = 1[0m
+  ↳ app/controllers/chats_controller.rb:7
+Completed 200 OK in 3ms (Views: 0.1ms | ActiveRecord: 0.8ms)
+
+
+Started POST "/applications/oPUt7V5QjDd8qWAC6f1HB9c3/chats" for 192.168.144.1 at 2022-07-31 21:33:05 +0000
+Processing by ChatsController#create as */*
+  Parameters: {"application_id"=>"oPUt7V5QjDd8qWAC6f1HB9c3"}
+  [1m[36mApplication Load (0.3ms)[0m  [1m[34mSELECT  `applications`.* FROM `applications` WHERE `applications`.`access_token` = 'oPUt7V5QjDd8qWAC6f1HB9c3' LIMIT 1[0m
+  ↳ app/controllers/chats_controller.rb:55
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.3ms)
+
+
+  
+NameError (uninitialized constant ChatsController::RabbitmqConnection):
+  
+app/controllers/chats_controller.rb:31:in `create'
+here
+  [1m[36mApplication Load (1.5ms)[0m  [1m[34mSELECT `applications`.* FROM `applications`[0m
+  ↳ config/initializers/scheduler.rb:8
+  [1m[36mChat Load (0.8ms)[0m  [1m[34mSELECT `chats`.* FROM `chats` WHERE `chats`.`application_id` = 1[0m
+  ↳ config/initializers/scheduler.rb:9
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ config/initializers/scheduler.rb:10
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ config/initializers/scheduler.rb:10
+  [1m[36mChat Load (0.7ms)[0m  [1m[34mSELECT `chats`.* FROM `chats`[0m
+  ↳ config/initializers/scheduler.rb:13
+  [1m[35m (1.4ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.8ms)[0m  [1m[35mCREATE DATABASE `app` DEFAULT CHARACTER SET `utf8`[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.6ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.7ms)[0m  [1m[35mCREATE DATABASE `app` DEFAULT CHARACTER SET `utf8`[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT GET_LOCK('6939591962871035475', 0)[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT  `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT RELEASE_LOCK('6939591962871035475')[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.4ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE DATABASE `app` DEFAULT CHARACTER SET `utf8`[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE DATABASE `app` DEFAULT CHARACTER SET `utf8`[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE DATABASE `app` DEFAULT CHARACTER SET `utf8`[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE DATABASE `app` DEFAULT CHARACTER SET `utf8`[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.4ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT GET_LOCK('6939591962871035475', 0)[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[36mActiveRecord::InternalMetadata Load (0.6ms)[0m  [1m[34mSELECT  `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT RELEASE_LOCK('6939591962871035475')[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.4ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT GET_LOCK('6939591962871035475', 0)[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT  `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT RELEASE_LOCK('6939591962871035475')[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (4.5ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE DATABASE `app` DEFAULT CHARACTER SET `utf8`[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE DATABASE `app` DEFAULT CHARACTER SET `utf8`[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.4ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (46.7ms)[0m  [1m[35mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL PRIMARY KEY)[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (47.1ms)[0m  [1m[35mCREATE TABLE `ar_internal_metadata` (`key` varchar(255) NOT NULL PRIMARY KEY, `value` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL)[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT GET_LOCK('6939591962871035475', 0)[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /usr/local/bundle/bin/rake:23
+Migrating to CreateApplications (20220730181713)
+  [1m[35m (49.2ms)[0m  [1m[35mCREATE TABLE `applications` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `access_token` varchar(255), `name` varchar(255), `chat_count` int, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL)[0m
+  ↳ db/migrate/20220730181713_create_applications.rb:3
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[36mActiveRecord::SchemaMigration Create (0.4ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20220730181713')[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (6.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /usr/local/bundle/bin/rake:23
+Migrating to CreateChats (20220730181849)
+  [1m[35m (48.3ms)[0m  [1m[35mCREATE TABLE `chats` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `number` int, `application_id` bigint, `message_count` int, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL,  INDEX `index_chats_on_application_id`  (`application_id`), CONSTRAINT `fk_rails_3b5054ba3a`
+FOREIGN KEY (`application_id`)
+  REFERENCES `applications` (`id`)
+)[0m
+  ↳ db/migrate/20220730181849_create_chats.rb:3
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[36mActiveRecord::SchemaMigration Create (0.4ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20220730181849')[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (11.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /usr/local/bundle/bin/rake:23
+Migrating to CreateMessages (20220730182004)
+  [1m[35m (45.8ms)[0m  [1m[35mCREATE TABLE `messages` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `number` int, `body` text, `chat_id` bigint, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL,  INDEX `index_messages_on_chat_id`  (`chat_id`), CONSTRAINT `fk_rails_0f670de7ba`
+FOREIGN KEY (`chat_id`)
+  REFERENCES `chats` (`id`)
+)[0m
+  ↳ db/migrate/20220730182004_create_messages.rb:3
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20220730182004')[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (5.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[36mActiveRecord::InternalMetadata Load (0.5ms)[0m  [1m[34mSELECT  `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[36mActiveRecord::InternalMetadata Create (1.1ms)[0m  [1m[32mINSERT INTO `ar_internal_metadata` (`key`, `value`, `created_at`, `updated_at`) VALUES ('environment', 'development', '2022-07-31 21:45:02', '2022-07-31 21:45:02')[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (5.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT RELEASE_LOCK('6939591962871035475')[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.4ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.4ms)[0m  [1m[35mCREATE DATABASE `app` DEFAULT CHARACTER SET `utf8`[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE DATABASE `app` DEFAULT CHARACTER SET `utf8`[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.4ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT GET_LOCK('6939591962871035475', 0)[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[36mActiveRecord::InternalMetadata Load (0.5ms)[0m  [1m[34mSELECT  `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT RELEASE_LOCK('6939591962871035475')[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.4ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE DATABASE `app` DEFAULT CHARACTER SET `utf8`[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE DATABASE `app` DEFAULT CHARACTER SET `utf8`[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE DATABASE `app` DEFAULT CHARACTER SET `utf8`[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE DATABASE `app` DEFAULT CHARACTER SET `utf8`[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT GET_LOCK('6939591962871035475', 0)[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[36mActiveRecord::InternalMetadata Load (0.5ms)[0m  [1m[34mSELECT  `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT RELEASE_LOCK('6939591962871035475')[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.4ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT GET_LOCK('6939591962871035475', 0)[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT  `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT RELEASE_LOCK('6939591962871035475')[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /usr/local/bundle/bin/rake:23
+Started GET "/applications/oPUt7V5QjDd8qWAC6f1HB9c3/chats/" for 192.168.160.1 at 2022-07-31 21:48:37 +0000
+  [1m[35m (0.2ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.8.1/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.8.1/lib/active_record/log_subscriber.rb:98
+Processing by ChatsController#index as */*
+  Parameters: {"application_id"=>"oPUt7V5QjDd8qWAC6f1HB9c3"}
+  [1m[36mApplication Load (0.4ms)[0m  [1m[34mSELECT  `applications`.* FROM `applications` WHERE `applications`.`access_token` = 'oPUt7V5QjDd8qWAC6f1HB9c3' LIMIT 1[0m
+  ↳ app/controllers/chats_controller.rb:55
+Completed 404 Not Found in 6ms (ActiveRecord: 1.0ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Application):
+  
+app/controllers/chats_controller.rb:55:in `set_application'
+Started POST "/applications" for 192.168.160.1 at 2022-07-31 21:48:41 +0000
+Processing by ApplicationsController#create as */*
+  Parameters: {"name"=>"testing12", "application"=>{"name"=>"testing12"}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/applications_controller.rb:20
+  [1m[36mApplication Create (0.3ms)[0m  [1m[32mINSERT INTO `applications` (`access_token`, `name`, `chat_count`, `created_at`, `updated_at`) VALUES ('gT5wrPf8UcjB5wNJN8Lj6srx', 'testing12', 0, '2022-07-31 21:48:41', '2022-07-31 21:48:41')[0m
+  ↳ app/controllers/applications_controller.rb:20
+  [1m[35m (5.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/applications_controller.rb:20
+Completed 201 Created in 13ms (Views: 0.6ms | ActiveRecord: 7.1ms)
+
+
+Started GET "/applications/gT5wrPf8UcjB5wNJN8Lj6srx/chats/" for 192.168.160.1 at 2022-07-31 21:48:48 +0000
+Processing by ChatsController#index as */*
+  Parameters: {"application_id"=>"gT5wrPf8UcjB5wNJN8Lj6srx"}
+  [1m[36mApplication Load (0.4ms)[0m  [1m[34mSELECT  `applications`.* FROM `applications` WHERE `applications`.`access_token` = 'gT5wrPf8UcjB5wNJN8Lj6srx' LIMIT 1[0m
+  ↳ app/controllers/chats_controller.rb:55
+  [1m[36mChat Load (0.7ms)[0m  [1m[34mSELECT `chats`.* FROM `chats` WHERE `chats`.`application_id` = 1[0m
+  ↳ app/controllers/chats_controller.rb:7
+Completed 200 OK in 7ms (Views: 0.1ms | ActiveRecord: 1.5ms)
+
+
+Started POST "/applications/gT5wrPf8UcjB5wNJN8Lj6srx/chats" for 192.168.160.1 at 2022-07-31 21:48:53 +0000
+Processing by ChatsController#create as */*
+  Parameters: {"application_id"=>"gT5wrPf8UcjB5wNJN8Lj6srx"}
+  [1m[36mApplication Load (0.4ms)[0m  [1m[34mSELECT  `applications`.* FROM `applications` WHERE `applications`.`access_token` = 'gT5wrPf8UcjB5wNJN8Lj6srx' LIMIT 1[0m
+  ↳ app/controllers/chats_controller.rb:55
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.4ms)
+
+
+  
+NameError (uninitialized constant ChatsController::RabbitmqConnection):
+  
+app/controllers/chats_controller.rb:31:in `create'
+  [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE DATABASE `app` DEFAULT CHARACTER SET `utf8`[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE DATABASE `app` DEFAULT CHARACTER SET `utf8`[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE DATABASE `app` DEFAULT CHARACTER SET `utf8`[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE DATABASE `app` DEFAULT CHARACTER SET `utf8`[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT GET_LOCK('6939591962871035475', 0)[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT  `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT RELEASE_LOCK('6939591962871035475')[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.4ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT GET_LOCK('6939591962871035475', 0)[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[36mActiveRecord::InternalMetadata Load (0.6ms)[0m  [1m[34mSELECT  `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT RELEASE_LOCK('6939591962871035475')[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /usr/local/bundle/bin/rake:23
+here
+  [1m[35m (0.2ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ config/initializers/scheduler.rb:8
+  [1m[36mApplication Load (0.3ms)[0m  [1m[34mSELECT `applications`.* FROM `applications`[0m
+  ↳ config/initializers/scheduler.rb:8
+  [1m[36mChat Load (0.3ms)[0m  [1m[34mSELECT `chats`.* FROM `chats` WHERE `chats`.`application_id` = 1[0m
+  ↳ config/initializers/scheduler.rb:9
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ config/initializers/scheduler.rb:10
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ config/initializers/scheduler.rb:10
+  [1m[36mChat Load (0.3ms)[0m  [1m[34mSELECT `chats`.* FROM `chats`[0m
+  ↳ config/initializers/scheduler.rb:13
+  [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE DATABASE `app` DEFAULT CHARACTER SET `utf8`[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE DATABASE `app` DEFAULT CHARACTER SET `utf8`[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE DATABASE `app` DEFAULT CHARACTER SET `utf8`[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE DATABASE `app` DEFAULT CHARACTER SET `utf8`[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (51.2ms)[0m  [1m[35mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL PRIMARY KEY)[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (41.8ms)[0m  [1m[35mCREATE TABLE `ar_internal_metadata` (`key` varchar(255) NOT NULL PRIMARY KEY, `value` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL)[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT GET_LOCK('6939591962871035475', 0)[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (48.9ms)[0m  [1m[35mCREATE TABLE `ar_internal_metadata` (`key` varchar(255) NOT NULL PRIMARY KEY, `value` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL)[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /usr/local/bundle/bin/rake:23
+Migrating to CreateApplications (20220730181713)
+  [1m[35m (41.2ms)[0m  [1m[35mCREATE TABLE `applications` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `access_token` varchar(255), `name` varchar(255), `chat_count` int, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL)[0m
+  ↳ db/migrate/20220730181713_create_applications.rb:3
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[36mActiveRecord::SchemaMigration Create (0.6ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20220730181713')[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (6.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /usr/local/bundle/bin/rake:23
+Migrating to CreateChats (20220730181849)
+  [1m[35m (60.0ms)[0m  [1m[35mCREATE TABLE `chats` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `number` int, `application_id` bigint, `message_count` int, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL,  INDEX `index_chats_on_application_id`  (`application_id`), CONSTRAINT `fk_rails_3b5054ba3a`
+FOREIGN KEY (`application_id`)
+  REFERENCES `applications` (`id`)
+)[0m
+  ↳ db/migrate/20220730181849_create_chats.rb:3
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[36mActiveRecord::SchemaMigration Create (0.5ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20220730181849')[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (14.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /usr/local/bundle/bin/rake:23
+Migrating to CreateMessages (20220730182004)
+  [1m[35m (80.4ms)[0m  [1m[35mCREATE TABLE `messages` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `number` int, `body` text, `chat_id` bigint, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL,  INDEX `index_messages_on_chat_id`  (`chat_id`), CONSTRAINT `fk_rails_0f670de7ba`
+FOREIGN KEY (`chat_id`)
+  REFERENCES `chats` (`id`)
+)[0m
+  ↳ db/migrate/20220730182004_create_messages.rb:3
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[36mActiveRecord::SchemaMigration Create (0.6ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20220730182004')[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (6.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[36mActiveRecord::InternalMetadata Load (0.6ms)[0m  [1m[34mSELECT  `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[36mActiveRecord::InternalMetadata Create (0.6ms)[0m  [1m[32mINSERT INTO `ar_internal_metadata` (`key`, `value`, `created_at`, `updated_at`) VALUES ('environment', 'development', '2022-07-31 22:14:54', '2022-07-31 22:14:54')[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (9.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT RELEASE_LOCK('6939591962871035475')[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE DATABASE `app` DEFAULT CHARACTER SET `utf8`[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE DATABASE `app` DEFAULT CHARACTER SET `utf8`[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT GET_LOCK('6939591962871035475', 0)[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT  `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT RELEASE_LOCK('6939591962871035475')[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.4ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.4ms)[0m  [1m[35mCREATE DATABASE `app` DEFAULT CHARACTER SET `utf8`[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE DATABASE `app` DEFAULT CHARACTER SET `utf8`[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE DATABASE `app` DEFAULT CHARACTER SET `utf8`[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE DATABASE `app` DEFAULT CHARACTER SET `utf8`[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE DATABASE `app` DEFAULT CHARACTER SET `utf8`[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE DATABASE `app` DEFAULT CHARACTER SET `utf8`[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT GET_LOCK('6939591962871035475', 0)[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT  `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT RELEASE_LOCK('6939591962871035475')[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT GET_LOCK('6939591962871035475', 0)[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT  `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT RELEASE_LOCK('6939591962871035475')[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT GET_LOCK('6939591962871035475', 0)[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT  `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT RELEASE_LOCK('6939591962871035475')[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE DATABASE `app` DEFAULT CHARACTER SET `utf8`[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE DATABASE `app` DEFAULT CHARACTER SET `utf8`[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT GET_LOCK('6939591962871035475', 0)[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT  `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT RELEASE_LOCK('6939591962871035475')[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE DATABASE `app` DEFAULT CHARACTER SET `utf8`[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE DATABASE `app` DEFAULT CHARACTER SET `utf8`[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT GET_LOCK('6939591962871035475', 0)[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT  `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT RELEASE_LOCK('6939591962871035475')[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.4ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.4ms)[0m  [1m[35mCREATE DATABASE `app` DEFAULT CHARACTER SET `utf8`[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.4ms)[0m  [1m[35mCREATE DATABASE `app` DEFAULT CHARACTER SET `utf8`[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT GET_LOCK('6939591962871035475', 0)[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT  `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT RELEASE_LOCK('6939591962871035475')[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.4ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE DATABASE `app` DEFAULT CHARACTER SET `utf8`[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE DATABASE `app` DEFAULT CHARACTER SET `utf8`[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT GET_LOCK('6939591962871035475', 0)[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT  `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT RELEASE_LOCK('6939591962871035475')[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.4ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE DATABASE `app` DEFAULT CHARACTER SET `utf8`[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE DATABASE `app` DEFAULT CHARACTER SET `utf8`[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT GET_LOCK('6939591962871035475', 0)[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT  `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT RELEASE_LOCK('6939591962871035475')[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.4ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE DATABASE `app` DEFAULT CHARACTER SET `utf8`[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE DATABASE `app` DEFAULT CHARACTER SET `utf8`[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT GET_LOCK('6939591962871035475', 0)[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT  `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT RELEASE_LOCK('6939591962871035475')[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.6ms)[0m  [1m[35mCREATE DATABASE `app` DEFAULT CHARACTER SET `utf8`[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.4ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.5ms)[0m  [1m[35mCREATE DATABASE `app` DEFAULT CHARACTER SET `utf8`[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT GET_LOCK('6939591962871035475', 0)[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT  `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT RELEASE_LOCK('6939591962871035475')[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.4ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE DATABASE `app` DEFAULT CHARACTER SET `utf8`[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE DATABASE `app` DEFAULT CHARACTER SET `utf8`[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT GET_LOCK('6939591962871035475', 0)[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT  `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT RELEASE_LOCK('6939591962871035475')[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.5ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE DATABASE `app` DEFAULT CHARACTER SET `utf8`[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE DATABASE `app` DEFAULT CHARACTER SET `utf8`[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT GET_LOCK('6939591962871035475', 0)[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[36mActiveRecord::InternalMetadata Load (0.5ms)[0m  [1m[34mSELECT  `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT RELEASE_LOCK('6939591962871035475')[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE DATABASE `app` DEFAULT CHARACTER SET `utf8`[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE DATABASE `app` DEFAULT CHARACTER SET `utf8`[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT GET_LOCK('6939591962871035475', 0)[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT  `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT RELEASE_LOCK('6939591962871035475')[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.4ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE DATABASE `app` DEFAULT CHARACTER SET `utf8`[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE DATABASE `app` DEFAULT CHARACTER SET `utf8`[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT GET_LOCK('6939591962871035475', 0)[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT  `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT RELEASE_LOCK('6939591962871035475')[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.5ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.7ms)[0m  [1m[35mCREATE DATABASE `app` DEFAULT CHARACTER SET `utf8`[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.5ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.5ms)[0m  [1m[35mCREATE DATABASE `app` DEFAULT CHARACTER SET `utf8`[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.5ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT GET_LOCK('6939591962871035475', 0)[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT  `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT RELEASE_LOCK('6939591962871035475')[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE DATABASE `app` DEFAULT CHARACTER SET `utf8`[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.4ms)[0m  [1m[35mCREATE DATABASE `app` DEFAULT CHARACTER SET `utf8`[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT GET_LOCK('6939591962871035475', 0)[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[36mActiveRecord::InternalMetadata Load (0.5ms)[0m  [1m[34mSELECT  `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT RELEASE_LOCK('6939591962871035475')[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.4ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE DATABASE `app` DEFAULT CHARACTER SET `utf8`[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE DATABASE `app` DEFAULT CHARACTER SET `utf8`[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT GET_LOCK('6939591962871035475', 0)[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT  `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT RELEASE_LOCK('6939591962871035475')[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.4ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE DATABASE `app` DEFAULT CHARACTER SET `utf8`[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE DATABASE `app` DEFAULT CHARACTER SET `utf8`[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT GET_LOCK('6939591962871035475', 0)[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT  `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT RELEASE_LOCK('6939591962871035475')[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.4ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE DATABASE `app` DEFAULT CHARACTER SET `utf8`[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE DATABASE `app` DEFAULT CHARACTER SET `utf8`[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT GET_LOCK('6939591962871035475', 0)[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT  `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT RELEASE_LOCK('6939591962871035475')[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.5ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.4ms)[0m  [1m[35mCREATE DATABASE `app` DEFAULT CHARACTER SET `utf8`[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.4ms)[0m  [1m[35mCREATE DATABASE `app` DEFAULT CHARACTER SET `utf8`[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.5ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT GET_LOCK('6939591962871035475', 0)[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT  `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT RELEASE_LOCK('6939591962871035475')[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /usr/local/bundle/bin/rake:23
+here
+  [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ config/initializers/scheduler.rb:8
+  [1m[36mApplication Load (0.3ms)[0m  [1m[34mSELECT `applications`.* FROM `applications`[0m
+  ↳ config/initializers/scheduler.rb:8
+  [1m[36mChat Load (0.2ms)[0m  [1m[34mSELECT `chats`.* FROM `chats`[0m
+  ↳ config/initializers/scheduler.rb:13
+  [1m[35m (0.5ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.5ms)[0m  [1m[35mCREATE DATABASE `app` DEFAULT CHARACTER SET `utf8`[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.4ms)[0m  [1m[35mCREATE DATABASE `app` DEFAULT CHARACTER SET `utf8`[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT GET_LOCK('6939591962871035475', 0)[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT  `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT RELEASE_LOCK('6939591962871035475')[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /usr/local/bundle/bin/rake:23
+here
+  [1m[35m (0.2ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ config/initializers/scheduler.rb:8
+  [1m[36mApplication Load (0.3ms)[0m  [1m[34mSELECT `applications`.* FROM `applications`[0m
+  ↳ config/initializers/scheduler.rb:8
+  [1m[36mChat Load (0.2ms)[0m  [1m[34mSELECT `chats`.* FROM `chats`[0m
+  ↳ config/initializers/scheduler.rb:13
+  [1m[35m (0.4ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE DATABASE `app` DEFAULT CHARACTER SET `utf8`[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE DATABASE `app` DEFAULT CHARACTER SET `utf8`[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.4ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT GET_LOCK('6939591962871035475', 0)[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT  `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT RELEASE_LOCK('6939591962871035475')[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /usr/local/bundle/bin/rake:23
+here
+  [1m[35m (0.2ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ config/initializers/scheduler.rb:8
+  [1m[36mApplication Load (0.2ms)[0m  [1m[34mSELECT `applications`.* FROM `applications`[0m
+  ↳ config/initializers/scheduler.rb:8
+  [1m[36mChat Load (0.2ms)[0m  [1m[34mSELECT `chats`.* FROM `chats`[0m
+  ↳ config/initializers/scheduler.rb:13
+here
+  [1m[36mApplication Load (0.6ms)[0m  [1m[34mSELECT `applications`.* FROM `applications`[0m
+  ↳ config/initializers/scheduler.rb:8
+  [1m[36mChat Load (0.3ms)[0m  [1m[34mSELECT `chats`.* FROM `chats`[0m
+  ↳ config/initializers/scheduler.rb:13
+here
+  [1m[36mApplication Load (18.4ms)[0m  [1m[34mSELECT `applications`.* FROM `applications`[0m
+  ↳ config/initializers/scheduler.rb:8
+  [1m[36mChat Load (0.3ms)[0m  [1m[34mSELECT `chats`.* FROM `chats`[0m
+  ↳ config/initializers/scheduler.rb:13
+here
+  [1m[36mApplication Load (0.4ms)[0m  [1m[34mSELECT `applications`.* FROM `applications`[0m
+  ↳ config/initializers/scheduler.rb:8
+  [1m[36mChat Load (0.3ms)[0m  [1m[34mSELECT `chats`.* FROM `chats`[0m
+  ↳ config/initializers/scheduler.rb:13
+here
+  [1m[36mApplication Load (1.4ms)[0m  [1m[34mSELECT `applications`.* FROM `applications`[0m
+  ↳ config/initializers/scheduler.rb:8
+  [1m[36mChat Load (0.8ms)[0m  [1m[34mSELECT `chats`.* FROM `chats`[0m
+  ↳ config/initializers/scheduler.rb:13
+  [1m[35m (3.8ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.4ms)[0m  [1m[35mCREATE DATABASE `app` DEFAULT CHARACTER SET `utf8`[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE DATABASE `app` DEFAULT CHARACTER SET `utf8`[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT GET_LOCK('6939591962871035475', 0)[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[36mActiveRecord::InternalMetadata Load (0.5ms)[0m  [1m[34mSELECT  `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT RELEASE_LOCK('6939591962871035475')[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (1.1ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE DATABASE `app` DEFAULT CHARACTER SET `utf8`[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE DATABASE `app` DEFAULT CHARACTER SET `utf8`[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.8ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (4.6ms)[0m  [1m[34mSELECT GET_LOCK('6939591962871035475', 0)[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT  `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT RELEASE_LOCK('6939591962871035475')[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /usr/local/bundle/bin/rake:23
+Started GET "/applications/gT5wrPf8UcjB5wNJN8Lj6srx/chats/" for 192.168.176.1 at 2022-07-31 23:32:45 +0000
+  [1m[35m (0.6ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.8.1/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.8.1/lib/active_record/log_subscriber.rb:98
+Processing by ChatsController#index as */*
+  Parameters: {"application_id"=>"gT5wrPf8UcjB5wNJN8Lj6srx"}
+  [1m[36mApplication Load (0.2ms)[0m  [1m[34mSELECT  `applications`.* FROM `applications` WHERE `applications`.`access_token` = 'gT5wrPf8UcjB5wNJN8Lj6srx' LIMIT 1[0m
+  ↳ app/controllers/chats_controller.rb:53
+Completed 404 Not Found in 5ms (ActiveRecord: 0.8ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Application):
+  
+app/controllers/chats_controller.rb:53:in `set_application'
+Started POST "/applications" for 192.168.176.1 at 2022-07-31 23:32:49 +0000
+Processing by ApplicationsController#create as */*
+  Parameters: {"name"=>"testing12", "application"=>{"name"=>"testing12"}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/applications_controller.rb:20
+  [1m[36mApplication Create (2.1ms)[0m  [1m[32mINSERT INTO `applications` (`access_token`, `name`, `chat_count`, `created_at`, `updated_at`) VALUES ('MfiVd9czsCez1PUT6BBf1rTt', 'testing12', 0, '2022-07-31 23:32:49', '2022-07-31 23:32:49')[0m
+  ↳ app/controllers/applications_controller.rb:20
+  [1m[35m (6.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/applications_controller.rb:20
+Completed 201 Created in 22ms (Views: 1.9ms | ActiveRecord: 9.9ms)
+
+
+Started POST "/applications/MfiVd9czsCez1PUT6BBf1rTt/chats" for 192.168.176.1 at 2022-07-31 23:32:58 +0000
+Processing by ChatsController#create as */*
+  Parameters: {"application_id"=>"MfiVd9czsCez1PUT6BBf1rTt"}
+  [1m[36mApplication Load (0.3ms)[0m  [1m[34mSELECT  `applications`.* FROM `applications` WHERE `applications`.`access_token` = 'MfiVd9czsCez1PUT6BBf1rTt' LIMIT 1[0m
+  ↳ app/controllers/chats_controller.rb:53
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.3ms)
+
+
+  
+NameError (uninitialized constant ChatsController::PublishHandler):
+  
+app/controllers/chats_controller.rb:31:in `create'
+  [1m[35m (0.6ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE DATABASE `app` DEFAULT CHARACTER SET `utf8`[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE DATABASE `app` DEFAULT CHARACTER SET `utf8`[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT GET_LOCK('6939591962871035475', 0)[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT  `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT RELEASE_LOCK('6939591962871035475')[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.6ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (69.4ms)[0m  [1m[35mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL PRIMARY KEY)[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (53.2ms)[0m  [1m[35mCREATE TABLE `ar_internal_metadata` (`key` varchar(255) NOT NULL PRIMARY KEY, `value` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL)[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT GET_LOCK('6939591962871035475', 0)[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /usr/local/bundle/bin/rake:23
+Migrating to CreateApplications (20220730181713)
+  [1m[35m (132.7ms)[0m  [1m[35mCREATE TABLE `applications` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `access_token` varchar(255), `name` varchar(255), `chat_count` int, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL)[0m
+  ↳ db/migrate/20220730181713_create_applications.rb:3
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20220730181713')[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (5.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /usr/local/bundle/bin/rake:23
+Migrating to CreateChats (20220730181849)
+  [1m[35m (55.1ms)[0m  [1m[35mCREATE TABLE `chats` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `number` int, `application_id` bigint, `message_count` int, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL,  INDEX `index_chats_on_application_id`  (`application_id`), CONSTRAINT `fk_rails_3b5054ba3a`
+FOREIGN KEY (`application_id`)
+  REFERENCES `applications` (`id`)
+)[0m
+  ↳ db/migrate/20220730181849_create_chats.rb:3
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20220730181849')[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (11.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /usr/local/bundle/bin/rake:23
+Migrating to CreateMessages (20220730182004)
+  [1m[35m (51.0ms)[0m  [1m[35mCREATE TABLE `messages` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `number` int, `body` text, `chat_id` bigint, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL,  INDEX `index_messages_on_chat_id`  (`chat_id`), CONSTRAINT `fk_rails_0f670de7ba`
+FOREIGN KEY (`chat_id`)
+  REFERENCES `chats` (`id`)
+)[0m
+  ↳ db/migrate/20220730182004_create_messages.rb:3
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20220730182004')[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (5.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT  `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[36mActiveRecord::InternalMetadata Create (0.3ms)[0m  [1m[32mINSERT INTO `ar_internal_metadata` (`key`, `value`, `created_at`, `updated_at`) VALUES ('environment', 'development', '2022-07-31 23:41:27', '2022-07-31 23:41:27')[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (5.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT RELEASE_LOCK('6939591962871035475')[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /usr/local/bundle/bin/rake:23
+Started POST "/applications/MfiVd9czsCez1PUT6BBf1rTt/chats" for 192.168.208.1 at 2022-07-31 23:42:52 +0000
+  [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.8.1/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.8.1/lib/active_record/log_subscriber.rb:98
+Processing by ChatsController#create as */*
+  Parameters: {"application_id"=>"MfiVd9czsCez1PUT6BBf1rTt"}
+  [1m[36mApplication Load (0.4ms)[0m  [1m[34mSELECT  `applications`.* FROM `applications` WHERE `applications`.`access_token` = 'MfiVd9czsCez1PUT6BBf1rTt' LIMIT 1[0m
+  ↳ app/controllers/chats_controller.rb:53
+Completed 404 Not Found in 6ms (ActiveRecord: 0.8ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Application):
+  
+app/controllers/chats_controller.rb:53:in `set_application'
+Started POST "/applications" for 192.168.208.1 at 2022-07-31 23:42:56 +0000
+Processing by ApplicationsController#create as */*
+  Parameters: {"name"=>"testing12", "application"=>{"name"=>"testing12"}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/applications_controller.rb:20
+  [1m[36mApplication Create (0.3ms)[0m  [1m[32mINSERT INTO `applications` (`access_token`, `name`, `chat_count`, `created_at`, `updated_at`) VALUES ('Qgdc8q7zJLRbt7VYisRW9gso', 'testing12', 0, '2022-07-31 23:42:56', '2022-07-31 23:42:56')[0m
+  ↳ app/controllers/applications_controller.rb:20
+  [1m[35m (6.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/applications_controller.rb:20
+Completed 201 Created in 15ms (Views: 0.7ms | ActiveRecord: 7.2ms)
+
+
+Started POST "/applications/Qgdc8q7zJLRbt7VYisRW9gso/chats" for 192.168.208.1 at 2022-07-31 23:43:04 +0000
+Processing by ChatsController#create as */*
+  Parameters: {"application_id"=>"Qgdc8q7zJLRbt7VYisRW9gso"}
+  [1m[36mApplication Load (0.3ms)[0m  [1m[34mSELECT  `applications`.* FROM `applications` WHERE `applications`.`access_token` = 'Qgdc8q7zJLRbt7VYisRW9gso' LIMIT 1[0m
+  ↳ app/controllers/chats_controller.rb:53
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.3ms)
+
+
+  
+NameError (uninitialized constant ChatsController::PublishHandler):
+  
+app/controllers/chats_controller.rb:31:in `create'
+here
+here
+  [1m[35m (5.8ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (6.2ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ config/initializers/scheduler.rb:8
+  ↳ config/initializers/scheduler.rb:8
+  [1m[36mApplication Load (3.5ms)[0m  [1m[34mSELECT `applications`.* FROM `applications`[0m
+  [1m[36mApplication Load (3.3ms)[0m  [1m[34mSELECT `applications`.* FROM `applications`[0m
+  ↳ config/initializers/scheduler.rb:8
+  ↳ config/initializers/scheduler.rb:8
+  [1m[36mChat Load (1.1ms)[0m  [1m[34mSELECT `chats`.* FROM `chats` WHERE `chats`.`application_id` = 1[0m
+  ↳ config/initializers/scheduler.rb:9
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ config/initializers/scheduler.rb:10
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ config/initializers/scheduler.rb:10
+  [1m[36mChat Load (0.5ms)[0m  [1m[34mSELECT `chats`.* FROM `chats`[0m
+  ↳ config/initializers/scheduler.rb:13
+  [1m[36mChat Load (0.4ms)[0m  [1m[34mSELECT `chats`.* FROM `chats` WHERE `chats`.`application_id` = 1[0m
+  ↳ config/initializers/scheduler.rb:9
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ config/initializers/scheduler.rb:10
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ config/initializers/scheduler.rb:10
+  [1m[36mChat Load (0.3ms)[0m  [1m[34mSELECT `chats`.* FROM `chats`[0m
+  ↳ config/initializers/scheduler.rb:13
+here
+  [1m[36mApplication Load (0.9ms)[0m  [1m[34mSELECT `applications`.* FROM `applications`[0m
+  ↳ config/initializers/scheduler.rb:8
+  [1m[36mChat Load (0.3ms)[0m  [1m[34mSELECT `chats`.* FROM `chats` WHERE `chats`.`application_id` = 1[0m
+  ↳ config/initializers/scheduler.rb:9
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ config/initializers/scheduler.rb:10
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ config/initializers/scheduler.rb:10
+  [1m[36mChat Load (0.2ms)[0m  [1m[34mSELECT `chats`.* FROM `chats`[0m
+  ↳ config/initializers/scheduler.rb:13
+  [1m[35m (0.4ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE DATABASE `app` DEFAULT CHARACTER SET `utf8`[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE DATABASE `app` DEFAULT CHARACTER SET `utf8`[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.7ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT GET_LOCK('6939591962871035475', 0)[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT  `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT RELEASE_LOCK('6939591962871035475')[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (1.8ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /usr/local/bundle/bin/rake:23
+Started POST "/applications/Qgdc8q7zJLRbt7VYisRW9gso/chats" for 192.168.208.1 at 2022-07-31 23:46:31 +0000
+  [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.8.1/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.8.1/lib/active_record/log_subscriber.rb:98
+Processing by ChatsController#create as */*
+  Parameters: {"application_id"=>"Qgdc8q7zJLRbt7VYisRW9gso"}
+  [1m[36mApplication Load (0.3ms)[0m  [1m[34mSELECT  `applications`.* FROM `applications` WHERE `applications`.`access_token` = 'Qgdc8q7zJLRbt7VYisRW9gso' LIMIT 1[0m
+  ↳ app/controllers/chats_controller.rb:53
+Completed 500 Internal Server Error in 18ms (ActiveRecord: 1.4ms)
+
+
+  
+NameError (uninitialized constant ChatsController::PublishHandler):
+  
+app/controllers/chats_controller.rb:31:in `create'
+  [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE DATABASE `app` DEFAULT CHARACTER SET `utf8`[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE DATABASE `app` DEFAULT CHARACTER SET `utf8`[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.6ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (60.4ms)[0m  [1m[35mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL PRIMARY KEY)[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (58.9ms)[0m  [1m[35mCREATE TABLE `ar_internal_metadata` (`key` varchar(255) NOT NULL PRIMARY KEY, `value` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL)[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT GET_LOCK('6939591962871035475', 0)[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /usr/local/bundle/bin/rake:23
+Migrating to CreateApplications (20220730181713)
+  [1m[35m (66.4ms)[0m  [1m[35mCREATE TABLE `applications` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `access_token` varchar(255), `name` varchar(255), `chat_count` int, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL)[0m
+  ↳ db/migrate/20220730181713_create_applications.rb:3
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[36mActiveRecord::SchemaMigration Create (0.8ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20220730181713')[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (7.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /usr/local/bundle/bin/rake:23
+Migrating to CreateChats (20220730181849)
+  [1m[35m (70.7ms)[0m  [1m[35mCREATE TABLE `chats` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `number` int, `application_id` bigint, `message_count` int, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL,  INDEX `index_chats_on_application_id`  (`application_id`), CONSTRAINT `fk_rails_3b5054ba3a`
+FOREIGN KEY (`application_id`)
+  REFERENCES `applications` (`id`)
+)[0m
+  ↳ db/migrate/20220730181849_create_chats.rb:3
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[36mActiveRecord::SchemaMigration Create (0.4ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20220730181849')[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (18.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /usr/local/bundle/bin/rake:23
+Migrating to CreateMessages (20220730182004)
+  [1m[35m (49.0ms)[0m  [1m[35mCREATE TABLE `messages` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `number` int, `body` text, `chat_id` bigint, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL,  INDEX `index_messages_on_chat_id`  (`chat_id`), CONSTRAINT `fk_rails_0f670de7ba`
+FOREIGN KEY (`chat_id`)
+  REFERENCES `chats` (`id`)
+)[0m
+  ↳ db/migrate/20220730182004_create_messages.rb:3
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20220730182004')[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (10.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT  `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[36mActiveRecord::InternalMetadata Create (0.2ms)[0m  [1m[32mINSERT INTO `ar_internal_metadata` (`key`, `value`, `created_at`, `updated_at`) VALUES ('environment', 'development', '2022-07-31 23:48:58', '2022-07-31 23:48:58')[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (5.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT RELEASE_LOCK('6939591962871035475')[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /usr/local/bundle/bin/rake:23
+Started POST "/applications/Qgdc8q7zJLRbt7VYisRW9gso/chats" for 192.168.224.1 at 2022-07-31 23:49:06 +0000
+  [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.8.1/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.8.1/lib/active_record/log_subscriber.rb:98
+Processing by ChatsController#create as */*
+  Parameters: {"application_id"=>"Qgdc8q7zJLRbt7VYisRW9gso"}
+  [1m[36mApplication Load (0.3ms)[0m  [1m[34mSELECT  `applications`.* FROM `applications` WHERE `applications`.`access_token` = 'Qgdc8q7zJLRbt7VYisRW9gso' LIMIT 1[0m
+  ↳ app/controllers/chats_controller.rb:53
+Completed 404 Not Found in 5ms (ActiveRecord: 0.7ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Application):
+  
+app/controllers/chats_controller.rb:53:in `set_application'
+Started POST "/applications" for 192.168.224.1 at 2022-07-31 23:49:10 +0000
+Processing by ApplicationsController#create as */*
+  Parameters: {"name"=>"testing12", "application"=>{"name"=>"testing12"}}
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/applications_controller.rb:20
+  [1m[36mApplication Create (0.3ms)[0m  [1m[32mINSERT INTO `applications` (`access_token`, `name`, `chat_count`, `created_at`, `updated_at`) VALUES ('LvEPnQyBKf4tNSfAB2JjAg3Y', 'testing12', 0, '2022-07-31 23:49:10', '2022-07-31 23:49:10')[0m
+  ↳ app/controllers/applications_controller.rb:20
+  [1m[35m (6.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/applications_controller.rb:20
+Completed 201 Created in 15ms (Views: 1.0ms | ActiveRecord: 7.2ms)
+
+
+Started POST "/applications/LvEPnQyBKf4tNSfAB2JjAg3Y/chats" for 192.168.224.1 at 2022-07-31 23:49:16 +0000
+Processing by ChatsController#create as */*
+  Parameters: {"application_id"=>"LvEPnQyBKf4tNSfAB2JjAg3Y"}
+  [1m[36mApplication Load (0.3ms)[0m  [1m[34mSELECT  `applications`.* FROM `applications` WHERE `applications`.`access_token` = 'LvEPnQyBKf4tNSfAB2JjAg3Y' LIMIT 1[0m
+  ↳ app/controllers/chats_controller.rb:53
+Completed 200 OK in 8ms (Views: 0.1ms | ActiveRecord: 0.3ms)
+
+
+  [1m[35m (0.5ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ app/workers/chat-worker.rb:8
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/workers/chat-worker.rb:9
+  [1m[36mApplication Load (0.5ms)[0m  [1m[34mSELECT  `applications`.* FROM `applications` WHERE `applications`.`id` = 1 LIMIT 1[0m
+  ↳ app/workers/chat-worker.rb:9
+  [1m[36mChat Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM `chats` WHERE `chats`.`number` = 1 AND `chats`.`application_id` = 1 LIMIT 1[0m
+  ↳ app/workers/chat-worker.rb:9
+  [1m[36mChat Create (0.4ms)[0m  [1m[32mINSERT INTO `chats` (`number`, `application_id`, `message_count`, `created_at`, `updated_at`) VALUES (1, 1, 0, '2022-07-31 23:49:16', '2022-07-31 23:49:16')[0m
+  ↳ app/workers/chat-worker.rb:9
+  [1m[35m (6.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/workers/chat-worker.rb:9
+Started GET "/applications/LvEPnQyBKf4tNSfAB2JjAg3Y/chats/" for 192.168.224.1 at 2022-07-31 23:49:24 +0000
+Processing by ChatsController#index as */*
+  Parameters: {"application_id"=>"LvEPnQyBKf4tNSfAB2JjAg3Y"}
+  [1m[36mApplication Load (0.3ms)[0m  [1m[34mSELECT  `applications`.* FROM `applications` WHERE `applications`.`access_token` = 'LvEPnQyBKf4tNSfAB2JjAg3Y' LIMIT 1[0m
+  ↳ app/controllers/chats_controller.rb:53
+  [1m[36mChat Load (0.3ms)[0m  [1m[34mSELECT `chats`.* FROM `chats` WHERE `chats`.`application_id` = 1[0m
+  ↳ app/controllers/chats_controller.rb:7
+Completed 200 OK in 10ms (Views: 0.2ms | ActiveRecord: 1.4ms)
+
+

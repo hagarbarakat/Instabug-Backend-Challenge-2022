@@ -1,5 +1,5 @@
-rm -f /app/tmp/pids/server.pid
-bundle exec rake db:create 
+sleep 10
+rm -f tmp/pids/server.pid
+bundle exec rake db:create
 bundle exec rake db:migrate
-#bundle exec rake elasticsearch:build_index
-bundle exec rails server -b 0.0.0.0
+rails s -p 3000 -b '0.0.0.0'

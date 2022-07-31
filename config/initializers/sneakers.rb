@@ -1,2 +1,2 @@
-Sneakers.configure({})
-Sneakers.logger.level = Logger::INFO
+require 'sneakers'
+Sneakers.configure :connection => Bunny.new(:host => ENV['RABBITMQ_HOST'])

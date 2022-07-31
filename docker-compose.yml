@@ -1,20 +1,5 @@
 version: '3'
 services:
-  rabbitmq:
-      image: rabbitmq:3-management
-      environment:
-        RABBITMQ_ERLANG_COOKIE: "SWQOKODSQALRPCLNMEQG"
-        RABBITMQ_DEFAULT_USER: "guest"
-        RABBITMQ_DEFAULT_PASS: "guest"
-        RABBITMQ_DEFAULT_VHOST: "/"
-      container_name: rabbitmq
-      ports:
-        - 15672:15672
-        - 5671-5672:5671-5672
-      restart: always
-      labels:
-        name:
-          rabbitmq
   db: 
         image: mysql:5.7
         restart: always
@@ -25,23 +10,20 @@ services:
             MYSQL_PASSWORD: password
         ports:
             - "3305:3305"
+  rabbitmq:
+    image: rabbitmq:3.9-management-alpine
+    restart: always
+    ports:
+      - 5672:5672
+      - 15672:15672
   redis:
         image: 'redis:5-alpine'
         restart: always
         ports:
             - "6379:6379"
-  elasticsearch:
-        container_name: es-container
-        image: docker.elastic.co/elasticsearch/elasticsearch:7.11.0
-        environment:
-          - xpack.security.enabled=false
-          - "discovery.type=single-node"
-        ports:
-          - 9200:9200
-  
   app: 
         build: .
-        command: bundle exec rails s -p 3000 -b '0.0.0.0'
+        command: bash -c "bash ./init.sh"
         volumes: 
             - ".:/app"
         ports: 
@@ -51,9 +33,7 @@ services:
             - redis
             - rabbitmq
             - elasticsearch
-        links:
-            - db
-            - redis
+        restart: always
         environment:
             DB_USER: root
             DB_NAME: app
@@ -64,27 +44,45 @@ services:
             REDIS_URL: redis://localhost:6379/1
             RABBITMQ_HOST: rabbitmq
             ES_HOST: elasticsearch
-  sneakers:
-        build: .
-        volumes:
-          - .:/app
-        depends_on:
-          - db
-          - rabbitmq
-          - app
-          - redis
-
-        links: 
-          - rabbitmq 
-        command: bash -c "bundle exec rake rabbitmq:setup && bundle exec rake sneakers:run"
-        restart: on-failure
+  chatworker:
+            build: .
+            command: rake sneakers:run
+            volumes:
+              - .:/app
+            depends_on:
+              - db
+              - rabbitmq
+            restart: always
+            environment:
+              DB_USER: root
+              DB_NAME: app
+              DB_PASSWORD: password
+              DB_HOST: db
+              RABBITMQ_HOST: rabbitmq
+              WORKERS: ChatWorker
+  messageworker:
+            build: .
+            command: rake sneakers:run
+            volumes:
+              - .:/app
+            depends_on:
+              - db
+              - rabbitmq
+            restart: always
+            environment:
+              DB_USER: root
+              DB_NAME: app
+              DB_PASSWORD: password
+              DB_HOST: db
+              RABBITMQ_HOST: rabbitmq
+              WORKERS: MessageWorker
+              ES_HOST: elasticsearch
+  elasticsearch:
+        container_name: es-container
+        image: docker.elastic.co/elasticsearch/elasticsearch:7.11.0
         environment:
-            DB_USER: root
-            DB_NAME: app
-            DB_PASSWORD: password
-            DB_HOST: db
-            REDIS_HOST: redis
-            REDIS_PORT: 6379
-            REDIS_URL: redis://localhost:6379/1
-            RABBITMQ_HOST: rabbitmq
-            ES_HOST: elasticsearch
+          - xpack.security.enabled=false
+          - "discovery.type=single-node"
+        ports:
+          - 9200:9200
+ 

@@ -1,2 +1,5 @@
- $bunny = Bunny.new(:host => ENV['RABBITMQ_HOST'])
- Sneakers.configure amqp: "amqp://guest:guest@rabbitmq"
+$bunnyConnection = Bunny.new(:host => ENV['RABBITMQ_HOST'])
+$bunnyConnection.start
+
+$chatQueueName = 'pendingChats'
+$messageQueueName = 'pendingMessages'

@@ -1,6 +1,6 @@
 class ChatWorker
     include Sneakers::Worker
-    from_queue "chat.queue", env: nil
+    from_queue $chatQueueName
 
     def work(chat_data)
         
