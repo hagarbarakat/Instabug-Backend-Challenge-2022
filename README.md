@@ -1,24 +1,17 @@
-# README
+# Instabug Backend Challenge 2022 
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## To run the code  
 
-Things you may want to cover:
+``` 
+docker-compose up --build
+```
 
-* Ruby version
+## Assumptions and notes: 
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+- The application is containerized using **docker**. 
+- **Redis**:
+    - To get number of chats from a certain application, increment it, and assigned it to a newly created chat 
+    - To get number of messages from a certain chat, increment it, and assigned it to a newly created message 
+    
+  **using ` incr ` command from redis.**
+  
