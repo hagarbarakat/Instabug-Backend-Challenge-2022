@@ -45,7 +45,7 @@ services:
         volumes: 
             - ".:/app"
         ports: 
-            - "3001:3000"
+            - "3000:3000"
         depends_on:
             - db
             - redis
@@ -54,6 +54,30 @@ services:
         links:
             - db
             - redis
+        environment:
+            DB_USER: root
+            DB_NAME: app
+            DB_PASSWORD: password
+            DB_HOST: db
+            REDIS_HOST: redis
+            REDIS_PORT: 6379
+            REDIS_URL: redis://localhost:6379/1
+            RABBITMQ_HOST: rabbitmq
+            ES_HOST: elasticsearch
+  sneakers:
+        build: .
+        volumes:
+          - .:/app
+        depends_on:
+          - db
+          - rabbitmq
+          - app
+          - redis
+
+        links: 
+          - rabbitmq 
+        command: bash -c "bundle exec rake rabbitmq:setup && bundle exec rake sneakers:run"
+        restart: on-failure
         environment:
             DB_USER: root
             DB_NAME: app

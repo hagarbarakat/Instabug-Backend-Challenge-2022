@@ -1,5 +1,4 @@
 require 'bunny'
-
 class Publisher
   class << self
     def publish(exchange, message = {})

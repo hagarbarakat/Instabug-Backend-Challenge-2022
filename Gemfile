@@ -17,6 +17,7 @@ gem "sneakers"
 gem 'elasticsearch-model', '~> 5.0.0'
 gem 'elasticsearch-rails', '~> 5.0.0'
 gem 'elasticsearch-persistence', '~> 5.0.0'
+gem 'rufus-scheduler'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 # gem 'jbuilder', '~> 2.5'
 # Use Redis adapter to run Action Cable in production

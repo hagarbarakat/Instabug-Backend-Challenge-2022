@@ -82,6 +82,8 @@ GEM
       faraday
       multi_json
     erubi (1.10.0)
+    et-orbi (1.2.7)
+      tzinfo
     faraday (1.10.0)
       faraday-em_http (~> 1.0)
       faraday-em_synchrony (~> 1.0)
@@ -106,6 +108,9 @@ GEM
     faraday-rack (1.0.0)
     faraday-retry (1.0.3)
     ffi (1.15.5)
+    fugit (1.5.3)
+      et-orbi (~> 1, >= 1.2.7)
+      raabro (~> 1.4)
     globalid (1.0.0)
       activesupport (>= 5.0)
     hashie (5.0.0)
@@ -135,6 +140,7 @@ GEM
       mini_portile2 (~> 2.6.1)
       racc (~> 1.4)
     puma (3.12.6)
+    raabro (1.4.0)
     racc (1.6.0)
     rack (2.2.4)
     rack-test (2.0.2)
@@ -189,6 +195,8 @@ GEM
       redis (>= 4, < 5)
     ruby2_keywords (0.0.5)
     ruby_dep (1.5.0)
+    rufus-scheduler (3.8.2)
+      fugit (~> 1.1, >= 1.1.6)
     serverengine (2.0.7)
       sigdump (~> 0.2.2)
     set (1.0.2)
@@ -242,6 +250,7 @@ DEPENDENCIES
   redis
   redis-namespace
   redis-rails
+  rufus-scheduler
   sneakers
   spring
   spring-watcher-listen (~> 2.0.0)

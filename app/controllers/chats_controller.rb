@@ -3,9 +3,8 @@ class ChatsController < ApplicationController
 
   # GET /chats
   def index
-    @chats = Application.where(access_token: params[:access_token])
-    puts @chats
-    render json: @chats.as_json(except: [:id])
+    @chats = Chat.where(application_id: @application.id)
+    render json: @chats.as_json(except: [:id, :application_id])
   end
 
   # GET /chats/1
@@ -15,18 +14,22 @@ class ChatsController < ApplicationController
 
   # POST /chats
   def create
-    @chat_params = {
-      number: $redis.incr("chat_number_#{@application_access_token}"),
+    chat_number = $redis.incr("chat_number_#{@application.access_token}")
+    chat_parameters = {
+      number: chat_number,
       application_id: @application.id,
       message_count: 0
     }
-    puts @chat_params
-    @chat = Chat.new(@chat_params)
-    #publisher for rabbitmq
-    Publisher.publish("chat", @chat)
-    @application.chat_count = $redis.incr("chat_count_#{@application_access_token}")
-    @application.save
 
+    # @chat = Chat.new(chat_parameters)
+    # puts @chat_params 
+    # @chat.save
+    #publisher for rabbitmq
+    # publisher = Publisher.new
+    # payload = chat_parameters.to_json
+    # publisher.publish(queue.name, payload)
+    Publisher.publish("chat", chat_parameters.to_json)
+    render json: chat_number
   end
 
   # PATCH/PUT /chats/1
