@@ -5,6 +5,8 @@
 ``` 
 docker-compose up --build
 ```
+### Take into consideration
+> :warning: :exclamation: At the beginning you will find errors related to workers, they vanish once rabbitmq is working and it only takes few seconds, so please wait till rabbitmq and app are working before testing. I really tried hard to manage the errors and I will fix them later. :warning: :exclamation:
 
 ## Assumptions and notes: 
 
