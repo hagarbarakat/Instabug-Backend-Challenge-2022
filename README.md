@@ -37,7 +37,7 @@ POST  /applications  - body of request {"name": {application_name}}
 POST  /applications/{access_token}/chats/
 POST  /applications/{access_token}/chats/{chat_number}/messages - body of request {"body": {message_body}}
 
-PUT   /applications/{access_token}?name={name}
-PUT   /applications/{access_token}/chats/{chat_number}/messages/{message_number}?body={message_body}
+PUT   /applications/{access_token} - body of request {"name": {application_name}}
+PUT   /applications/{access_token}/chats/{chat_number}/messages/{message_number}  - body of request {"body": {message_body}}
 
 ```
