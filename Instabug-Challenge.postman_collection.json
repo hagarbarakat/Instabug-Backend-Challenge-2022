@@ -1,0 +1,383 @@
+{
+	"info": {
+		"_postman_id": "277cfb4f-b71d-4d5e-a944-e4e9e84f7161",
+		"name": "Instabug-Challenge",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "CreateApplication",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"name\": \"testings12\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/applications",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"applications"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetAllApplications",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/applications",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"applications"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetApplicationByAccessToken",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/applications/7kW4MBk5UP1F5LzpcxfhFDLx",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"applications",
+						"7kW4MBk5UP1F5LzpcxfhFDLx"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CreateChat",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/applications/Znqa51WPgc77LwjiGMduT8YD/chats",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"applications",
+						"Znqa51WPgc77LwjiGMduT8YD",
+						"chats"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetApplicationChats",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/applications/LvEPnQyBKf4tNSfAB2JjAg3Y/chats/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"applications",
+						"LvEPnQyBKf4tNSfAB2JjAg3Y",
+						"chats",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CreateChatMessages",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"body\": \"hello world \"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/applications/Znqa51WPgc77LwjiGMduT8YD/chats/1/messages",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"applications",
+						"Znqa51WPgc77LwjiGMduT8YD",
+						"chats",
+						"1",
+						"messages"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": " GetAllChatMessages",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"text\": \"test\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/applications/7kW4MBk5UP1F5LzpcxfhFDLx/chats/5/messages/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"applications",
+						"7kW4MBk5UP1F5LzpcxfhFDLx",
+						"chats",
+						"5",
+						"messages",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetChatMessagebyMessageNumber",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/applications/7kW4MBk5UP1F5LzpcxfhFDLx/chats/5/messages/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"applications",
+						"7kW4MBk5UP1F5LzpcxfhFDLx",
+						"chats",
+						"5",
+						"messages",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetApplicationChatbyChatId",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/applications/7kW4MBk5UP1F5LzpcxfhFDLx/chats/5",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"applications",
+						"7kW4MBk5UP1F5LzpcxfhFDLx",
+						"chats",
+						"5"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "SearchMessages",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/applications/QVJSCCQScE1sVshoPT9Tv3f6/chats/1/messages/search?text=\"hello\"",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"applications",
+						"QVJSCCQScE1sVshoPT9Tv3f6",
+						"chats",
+						"1",
+						"messages",
+						"search"
+					],
+					"query": [
+						{
+							"key": "text",
+							"value": "\"hello\""
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UpdateApplication",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"name\": \"test keda\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/applications/EwpnCVQ8Pzm8fb4PwirEhE1S",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"applications",
+						"EwpnCVQ8Pzm8fb4PwirEhE1S"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UpdateMessageBody",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"body\": \"hello world yes\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/applications/dTFRZdkoob3BP22zYKpTeUSm/chats/1/messages/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"applications",
+						"dTFRZdkoob3BP22zYKpTeUSm",
+						"chats",
+						"1",
+						"messages",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DeleteMessage",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/applications/dTFRZdkoob3BP22zYKpTeUSm/chats/1/messages/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"applications",
+						"dTFRZdkoob3BP22zYKpTeUSm",
+						"chats",
+						"1",
+						"messages",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DeleteChat",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/applications/dTFRZdkoob3BP22zYKpTeUSm/chats/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"applications",
+						"dTFRZdkoob3BP22zYKpTeUSm",
+						"chats",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

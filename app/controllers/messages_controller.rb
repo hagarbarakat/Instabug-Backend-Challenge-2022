@@ -2,54 +2,46 @@ class MessagesController < ApplicationController
   before_action :set_application
   before_action :set_chat
 
-  # GET /messages
   def index
     @messages = Message.where(chat_id: @chat.id)
     render json: @messages.as_json(except: [:id, :chat_id])
   end
 
-  # GET /messages/1
   def show
-    render json: @chat.messages.find_by!(number: params[:number]).as_json(except: [:id])
+    @message = @chat.messages.find_by!(number: params[:number])
+    render json: {message_number: @message.number, chat_number: @chat.number, body: @message.body}
   end
 
-  # POST /messages
   def create
+    puts params[:body]
     message_number = $redis.incr("message_number_#{@chat.number}_#{@application.access_token}")
     message_params = {
       number: message_number,
       body: params[:body],
       chat_id: @chat.id,
     }
-    puts message_params
-    @message = Message.new(message_params)
-    @message.save
-    render json: @message.as_json(except: [:id])
     handler = PublishHandler.new
-    handler.send_message($messageQueueName,  message_params)
-    # Publisher.publish("message", @message)
-    # @chat.message_count = $redis.incr("message_count_#{@chat.number}")
-    # @chat.save
+    handler.send_message($messageQueue,  message_params)
+    render json: {message_number: message_number, chat_number: @chat.number, body: params[:body]}
+
   end
 
   def search
-    puts "helllosss"
-    puts params[:text]
     @message = Message.search(params[:text], @chat.id)
     render json: @message.as_json(except: [:id])
   end
   
-  # PATCH/PUT /messages/1
   def update
-    if @message.update(message_params)
-      render json: @message
+    @message = @chat.messages.find_by!(number: params[:number])
+    if @message.update({body: params[:body]})
+      render json: {message_number: @message.number, chat_number: @chat.number, body: params[:body]}
     else
       render json: @message.errors, status: :unprocessable_entity
     end
   end
 
-  # DELETE /messages/1
   def destroy
+    @message = @chat.messages.find_by!(number: params[:number])
     @message.destroy
   end
 
@@ -66,4 +58,6 @@ class MessagesController < ApplicationController
     def message_params
       params.require(:message).permit(:application_id, :body)
     end
+
+
 end

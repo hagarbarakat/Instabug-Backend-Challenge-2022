@@ -1,11 +1,11 @@
 class MessageWorker
     include Sneakers::Worker
-    from_queue $messageQueueName
+    from_queue $messageQueue
 
     def work(message_data)
         message_json = JSON.parse(message_data)
-        chat = Chat.new(message_json)
-        chat.save!
+        message = Message.new(message_json)
+        message.save!
         ack! 
       end
 end
